@@ -16,8 +16,6 @@ public class EmailModel implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long emailId;
-    //referência de quem enviou
-    private String ownerRef;
 
     //quem está enviando o e-mail
     private String emailFrom;
@@ -37,6 +35,8 @@ public class EmailModel implements Serializable {
 
     //status do e-mail
     private StatusEmail statusEmail;
+
+    private String attachment;
 
 
 }

@@ -22,4 +22,7 @@ public class EmailDto {
     @NotBlank
     private String text;
 
+    @NotBlank
+    private String attachment;
+
 }
