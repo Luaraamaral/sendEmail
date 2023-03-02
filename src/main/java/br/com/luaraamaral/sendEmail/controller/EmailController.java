@@ -42,6 +42,7 @@ public class EmailController {
         emailModel.setText(message);
         emailModel.setAttachment(attachment);
 
+
         try {
             emailService.sendEmailWithAttachment(emailModel);
         } catch (MessagingException e) {
@@ -53,6 +54,12 @@ public class EmailController {
         System.out.println(json.get("address"));
 
         return new ResponseEntity<>(emailModel, HttpStatus.CREATED);
+    }
+
+    @PostMapping("/teste")
+    public String teste (){
+        System.out.println("teste");
+        return "teste";
     }
 
 

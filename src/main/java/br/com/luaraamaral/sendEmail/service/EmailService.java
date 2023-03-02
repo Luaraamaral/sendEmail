@@ -49,7 +49,7 @@ public class EmailService {
 
         MimeBodyPart attachmentPart = new MimeBodyPart();
         attachmentPart.setDataHandler(new DataHandler(dataSource));
-        attachmentPart.setFileName("arquivo.pdf");
+        attachmentPart.setFileName("UNIMED (BOLETO ABERTO).pdf");
 
         Multipart multipart = new MimeMultipart();
         multipart.addBodyPart(attachmentPart);
