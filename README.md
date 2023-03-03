@@ -1,5 +1,5 @@
 # sendEmail
-Microservice de envio de e-mail utilizando smtp gmail.
+Microservice de envio de e-mail com arquivos, utilizando smtp gmail.
 
 Para utilização deste microservice, é necessário criar uma conexão com banco de dados; criei no pgAdmin 4, e utilizei o postgresql.
 Também é necessária a inserção das informações corretas de porta, username e password do banco no application.properties, e as configurações do SMTP do Gmail. 
